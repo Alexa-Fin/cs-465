@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router'; 
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } 
 from "@angular/forms"; 
-import { TripDataService } from '../services/trip-data.service'; 
+import { TripData } from '../services/trip-data'; 
 import { Trip } from '../models/trip'; 
 
 @Component({ 
@@ -93,5 +93,5 @@ export class editTrip implements OnInit{
 
     // get the form short name to access the form fields 
   get f() { return this.editForm.controls; }
-  
+
 }
